@@ -42,6 +42,8 @@
     if (providedSettings.triggerId) scriptElement.setAttribute("data-trigger", providedSettings.triggerId);
     if (providedSettings.account) scriptElement.setAttribute("data-account", providedSettings.account);
 
+    scriptElement.setAttribute("src", "https://cdn.accessibility-cdn.com/accessibility-widget.js");
+
     // Append the script to the <head> or <body>
     (d.body || d.head).appendChild(scriptElement);
 
